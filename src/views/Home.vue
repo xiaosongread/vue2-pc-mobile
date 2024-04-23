@@ -1,5 +1,5 @@
 <template>
-  <div class="home"></div>
+  <div class="home">首页</div>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
     return { num: 0 };
   },
   mounted() {
-    console.log('设备类型', this.isMobileDevice)
+    console.log("设备类型", this.isMobileDevice);
   },
   methods: {
     add() {

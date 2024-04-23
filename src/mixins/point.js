@@ -20,11 +20,11 @@ export function point() {
     gio && gio("page.set", {
         pagename_pvar: to.meta.title || "-",
         pageType_pvar: to.meta.type || "-",
-        platformname_pvar: "威马汽车官网",
+        platformname_pvar: "小宋模板官网",
         platformcode_pvar: "PL1576561305851587",
         activityname_pvar: "官网试驾留资",
         activityID_pvar: "AC1639990765289224",
-        channelname_pvar: "威马汽车官网",
+        channelname_pvar: "小宋模板官网",
         channelcode_pvar: "MC1577074835688809",
         pointname_pvar: "自然流量",
         pointcode_pvar: "MP1641902403968177",

@@ -1,6 +1,6 @@
 <template>
   <div class="pc" id="PC_MENU">
-    <div class="logo"><img :src="icon.logo" width="100%" alt="威马汽车logo" @click="onJump('/', 'router')" /></div>
+    <div class="logo"><img :src="icon.logo" width="100%" alt="小宋模板logo" @click="onJump('/', 'router')" /></div>
     <div class="list">
       <div class="item" v-for="(item, index) in menu_pc" :class="[item.children ? 'have' : 'none']" :key="index" @mouseenter="debounce(onMouseInter(item.children, index), 2000, false)" @mouseleave="debounce(onMouseLeave(index), 200, true)"  @click="onJump(item.url, item.type)">
         <div class="first">

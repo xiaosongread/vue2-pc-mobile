@@ -6,7 +6,7 @@
         <img class="wmlogo" src="@/static/phoneImg/wmlogo.png" alt="" />
       </div>
       <div class="downloadNowDesc">看车、订车、用车</div>
-      <div class="downloadNowDesc">尽在威马智行App</div>
+      <div class="downloadNowDesc">尽在小宋智行App</div>
       <div class="downloadNowBtn" @click="downloads">即刻下载</div>
     </div>
     <div class="mb">
@@ -14,7 +14,7 @@
         <img @click="goHome" src="@/static/pc_logo.png" alt="" />
       </div>
       <div class="Copyright">
-        Copyright© 2022 WM Motor All Rights Reserved <br />威马汽车版权所有
+        Copyright© 2022 WM Motor All Rights Reserved <br />小宋模板版权所有
       </div>
       <div class="icp">
         <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备 18006332号-6</a> <br /<a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011802004057" target="_blank">沪公网安备 31011802004057号</a>
