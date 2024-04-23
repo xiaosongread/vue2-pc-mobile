@@ -1,0 +1,7 @@
+NODE_ENV = 'production'
+BASE_URL = './'
+VUE_APP_PUBLIC_PATH = '../'
+VUE_APP_API = 'https://test.staven630.com/api'
+VUE_APP_HJ = 'production'
+#VUE_APP_BASE_API_HOST = 'https://os.wm-motor.com/'
+VUE_APP_BASE_API_HOST = 'https://zhixing.wm-imotor.com/'
