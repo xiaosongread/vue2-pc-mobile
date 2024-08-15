@@ -32,11 +32,6 @@
           <div class="contactType" v-if="language.text === 'EN'">
             <el-popover placement="top" trigger="click" popper-class="popover">
               <div class="hover">
-                <img
-                  class="qrcodeImg"
-                  src="@/static/qrcode_footer.png"
-                  alt="小宋模板公众号"
-                />
                 <div class="qrcode">扫一扫，关注“小宋模板”</div>
               </div>
               <img
@@ -52,9 +47,6 @@
               src="@/static/micro-blog.png"
               alt="小宋模板官方微博"
             />
-            <a href="mailto:service@wm-motor.com">
-              <img src="@/static/email.png" alt="小宋模板官方邮箱" />
-            </a>
           </div>
           <div class="language" @click="setLang">
             <div class="languageText">{{ language.text }}</div>
