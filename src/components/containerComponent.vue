@@ -1,12 +1,12 @@
 <template>
   <div :class="['container-component', swi ? 'swi' : '']">
-    <!-- <Header v-if="isHeader" /> -->
+    <Header v-if="isHeader" />
     <div :class="[platform === 'pc' ? 'main-pc' : 'main-mb']">
       <slot name="main"></slot>
     </div>
-    <!-- <Footer v-if="isFooter" /> -->
-    <!-- <FixedWindow v-if="!isMobile() && isShow" />
-    <IframeContainer/> -->
+    <!-- <Footer v-if="isFooter" />
+    <FixedWindow v-if="!isMobile() && isShow" />
+    <IframeContainer/>  -->
   </div>
 </template>
 

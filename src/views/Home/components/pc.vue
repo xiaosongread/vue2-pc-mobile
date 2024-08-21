@@ -1,39 +1,46 @@
 <template>
   <div class="home">
-    <p class="text">测试字体</p>
-    <p class="PC-text">测试字体</p>
+    <ul>
+      <li>123</li>
+    </ul>
   </div>
 </template>
 
 <script>
-import Vehicles from "@/components/vehicles/hoverVideo";
+import {
+  companyList
+} from "@/api/banner";
 import { mapMutations } from "vuex";
 
 var that = null;
 export default {
   name: "Home",
   components: {},
-  props: {
-    list: {
-      type: Array,
-      require: true
-    }
-  },
   data() {
     return {};
   },
-  created() {},
+  created() {
+    this.getData()
+  },
   mounted() {},
   computed: {},
-  methods: {}
+  methods: {
+    async getData() {
+      let data = await companyList();
+      console.log('list:', data);
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.text {
-  font-size: 16px;
-}
-.PC-text {
-  font-size: 16px;
+.home {
+  width: 1200px;
+  margin: 0 auto;
+  ul {
+    li {
+      background: red;
+    }
+  }
 }
 </style>

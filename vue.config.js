@@ -369,39 +369,29 @@ module.exports = {
     //   errors: true
     // },
     open: true, // 是否打开浏览器
-    // host: "localhost",
-    // port: "8080", // 代理断就
-    // https: false,
-    // hotOnly: false, // 热更新
+    host: "localhost",
+    port: "8080", // 代理断就
+    https: false,
+    hotOnly: false, // 热更新
     proxy: {
-      "/bannerApi": {
-        target: process.env.VUE_APP_BASE_API_BANNER, // homePage Banner
+      "/api": {
+        target: 'https://monkeysmall.com/api', // homePage Banner
         secure: false,
         changeOrigin: true, // 开启代理，在本地创建一个虚拟服务端
         // ws: true, // 是否启用websockets
         pathRewrite: {
-          "^/bannerApi": ""
+          "^/api": ""
         }
       },
-      "/leagueApi": {
-        target: process.env.VUE_APP_BASE_API_LEAGUE, // homePage Banner
-        secure: false,
-        changeOrigin: true, // 开启代理，在本地创建一个虚拟服务端
-        // ws: true, // 是否启用websockets
-        pathRewrite: {
-          "^/leagueApi": ""
-        }
-      },
-      /*,
-      "/zhixing": {
-        target: process.env.VUE_APP_BASE_API_ZHIXING, // homePage Banner
-        secure: false,
-        changeOrigin: true, // 开启代理，在本地创建一个虚拟服务端
-        // ws: true, // 是否启用websockets
-        pathRewrite: {
-          "^/zhixing": "/"
-        }
-      }*/
+      // "/leagueApi": {
+      //   target: process.env.VUE_APP_BASE_API_LEAGUE, // homePage Banner
+      //   secure: false,
+      //   changeOrigin: true, // 开启代理，在本地创建一个虚拟服务端
+      //   // ws: true, // 是否启用websockets
+      //   pathRewrite: {
+      //     "^/leagueApi": ""
+      //   }
+      // },
     }
   }
 };
