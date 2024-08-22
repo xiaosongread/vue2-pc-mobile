@@ -25,8 +25,9 @@ service.interceptors.request.use(
 // response 拦截器
 service.interceptors.response.use(
   response => {
+    console.log(11, response);
     if (response && response.data) {
-      if (response.data.code !== 1) {
+      if (response.data.code !== 200) {
         // Message({
         //     showClose: true,
         //     message: response.data.desc,

@@ -3,7 +3,18 @@
     <div class="header-menu">
       <div class="logo">
         <img src="@/static/imgs/logo.png" alt="">
-        <div class="text">让我们越来越好！</div>
+        <div class="text">
+          猿猴宝宝社区<br/>
+          <span>- 共享找工作 -</span>
+        </div>
+        <div class="search">
+          <el-input
+            placeholder="请输入您要搜索的公司名称"
+            v-model="input"
+            clearable>
+            <el-button slot="append" icon="el-icon-search"></el-button>
+          </el-input>
+        </div>
       </div>
       <ul>
         <li>首页</li>
@@ -22,7 +33,7 @@ export default {
   name: "WebMenu",
   data() {
     return {
-      
+      input: ''
     };
   },
   computed: {
@@ -58,6 +69,11 @@ $mult-color-blank: #000000; // rgba(0, 0, 0, 1);
   height: 60px;
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   .header-menu {
     width: 1200px;
     height: 100%;
@@ -65,7 +81,7 @@ $mult-color-blank: #000000; // rgba(0, 0, 0, 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     color: $mult-color;
     .logo {
       display: flex;
@@ -76,15 +92,24 @@ $mult-color-blank: #000000; // rgba(0, 0, 0, 1);
         height: 40px;
       }
       .text {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
         color: $mult-color-tag-3;
         margin-left: 10px;
+        text-align: left;
+        span{
+          font-size: 12px;
+          color: #999;
+        }
+      }
+      .search {
+        width: 400px;
+        margin-left: 20px;
       }
     }
     ul {
       display: flex;
-      gap: 10px;
+      gap: 30px;
       li {
         cursor: pointer;
         &:hover {
